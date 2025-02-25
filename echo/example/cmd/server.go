@@ -16,5 +16,7 @@ func main() {
 	e.POST("/user", appHandler.AddUser)
 	e.POST("/post", appHandler.AddPost)
 	e.GET("/post/:id", appHandler.GetPost)
+	e.GET("/posts/:nickname", appHandler.GetUserPosts)
+	e.DELETE("/post/:id", appHandler.DeletePost)
 	e.Logger.Fatal(e.Start(":1323"))
 }

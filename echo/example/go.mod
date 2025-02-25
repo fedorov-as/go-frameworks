@@ -3,7 +3,7 @@ module echo_example
 go 1.23.1
 
 require (
-	github.com/fedorov-as/app_example_logic v0.0.0-20250224173330-f6d1135558fc
+	github.com/fedorov-as/app_example_logic v0.0.0-20250225084536-d63c6a1b6c11
 	github.com/labstack/echo/v4 v4.13.3
 )
 

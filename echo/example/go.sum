@@ -1,7 +1,7 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/fedorov-as/app_example_logic v0.0.0-20250224173330-f6d1135558fc h1:8kpDe+FPszexzQ6sXfaZG3gZZ7xZ8bLjCvXbX5lECUk=
-github.com/fedorov-as/app_example_logic v0.0.0-20250224173330-f6d1135558fc/go.mod h1:CsjOOpat2XYfo+YMyRYaJoqTTb6X2/Hij1+13gRHoIQ=
+github.com/fedorov-as/app_example_logic v0.0.0-20250225084536-d63c6a1b6c11 h1:BtFFSirNFAkrGYpf847EwdtEMQyCUIb90/oIdC8J0ag=
+github.com/fedorov-as/app_example_logic v0.0.0-20250225084536-d63c6a1b6c11/go.mod h1:CsjOOpat2XYfo+YMyRYaJoqTTb6X2/Hij1+13gRHoIQ=
 github.com/go-playground/locales v0.14.1 h1:EWaQ/wswjilfKLTECiXz7Rh+3BjFhfDFKv/oXslEjJA=
 github.com/go-playground/locales v0.14.1/go.mod h1:hxrqLVvrK65+Rwrd5Fc6F2O76J/NuW9t0sjnWqG1slY=
 github.com/go-playground/universal-translator v0.18.1 h1:Bcnm0ZwsGyWbCzImXv+pAJnYK9S473LQFuzCbDbfSFY=
