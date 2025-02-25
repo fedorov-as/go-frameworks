@@ -1,15 +1,20 @@
 package main
 
 import (
-	"net/http"
+	"echo_example/handlers"
 
+	"github.com/go-playground/validator"
 	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	appHandler := handlers.NewAppHandler()
+
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
+	e.Validator = &handlers.CustomValidator{Validator: validator.New()}
+	e.GET("/", appHandler.Root)
+	e.POST("/user", appHandler.AddUser)
+	e.POST("/post", appHandler.AddPost)
+	e.GET("/post/:id", appHandler.GetPost)
 	e.Logger.Fatal(e.Start(":1323"))
 }
