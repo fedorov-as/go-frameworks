@@ -53,6 +53,11 @@ func (h AppHandler) AddPost(c echo.Context) error {
 		return err
 	}
 
+	auth := c.Get("username").(string)
+	if auth != p.OwnerNick {
+		return echo.NewHTTPError(http.StatusForbidden, "owner mismatches auth")
+	}
+
 	post, err := h.app.AddPost(p.Text, p.OwnerNick)
 	if err != nil {
 		return echo.NewHTTPError(http.StatusInternalServerError, err.Error())
